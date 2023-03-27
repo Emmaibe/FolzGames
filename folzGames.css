@@ -23,9 +23,61 @@ nav ul {
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
 }
 nav ul li {
   list-style: none;
   color: #202020;
+  padding: 0.68em;
+  border-radius: 12px;
+  transition: padding-bottom 0.3s, box-shadow 0.3s;
+}
+nav ul li:hover {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.75em;
+}
+nav ul li:nth-child(6):hover {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.65em;
+}
+.advert {
+  background-color: #202020;
+}
+.advertMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 400px;
+  max-width: 1200px;
+  margin: auto;
+}
+.advertInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding: 100px;
+}
+.advertInfo div:first-of-type {
+  font-size: 1.125rem;
+}
+.advertInfo div:nth-child(2) {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.advertInfo a {
+  width: 172px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  text-align: center;
+  place-items: center;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+.advertInfo a:hover {
+  background-color: #202020;
+  color: white;
 }
