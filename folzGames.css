@@ -41,20 +41,24 @@ nav ul li:nth-child(6):hover {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
   padding-bottom: 0.65em;
 }
-.firstPageMain {
+.firstPage {
+  display: flex;
+  gap: 0rem;
   max-width: 1050px;
   margin: auto;
-  margin-bottom: 100px;
-  margin-top: 90px;
+}
+.firstPageMain {
+  margin-bottom: 300px;
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1em;
+  position: relative;
 }
 .firstPageMain div:first-of-type {
   font-size: 30px;
   font-weight: 400px;
+  margin-top: 90px;
 }
 .firstPageMain div:nth-child(2) h1 {
   font-size: 75px;
@@ -75,6 +79,16 @@ nav ul li:nth-child(6):hover {
 .firstPageMain a:hover {
   background-color: white;
   color: #202020;
+}
+.firstPage img {
+  width: 71.25rem;
+  height: 55.25rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 90px;
+  right: 240px;
+  z-index: -1;
 }
 .advert {
   background-color: #202020;
